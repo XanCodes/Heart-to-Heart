@@ -1,0 +1,486 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+}
+.changeColor {
+    padding: 1rem 0;
+    background-color: black;
+}
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 62.5%;
+    }
+    #cashApp {
+        text-align: center; 
+        font-size: 3rem; 
+        font-family: 'Poppins', sans-serif;
+        margin: 2rem;
+    }
+    /*=============
+    Landing Styling
+    ===============*/
+    .jumbo {
+        height: 100vh;
+        width: 100%;
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://images.unsplash.com/photo-1508847154043-be5407fcaa5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    header {
+        height: 5rem;
+        width: 100%;
+        padding: 2rem 0;
+        position: fixed;
+        transition: 300ms ease-in-out;
+    }
+    header nav {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+    header nav .logo a h1 {
+        font-family: 'Staatliches', cursive;
+        color: white;
+        border: 4px solid white;
+        padding: 6px;
+        letter-spacing: 2px;
+        font-size: 2rem;
+        margin-top: 2.5px;
+    }
+    header nav .logo a h1 span {
+        color: red;
+        padding: 0 1px;
+    }
+    .nav-menu i {
+        display: none;
+    }
+    .nav-menu ul a {
+        display: inline-block;
+        color: white;
+        font-size: 1.8rem;
+        margin-left: 3rem;
+        margin-top: 6px;
+        font-family: 'Poppins', sans-serif;
+
+    }
+    .nav-menu ul a:hover, .nav-menu ul a:focus {
+        opacity: 0.5;
+        transition: .2s ease-in-out;
+    }
+    .jumbo .landing {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        font-family: "Staatliches", cursive;
+    }
+    .jumbo .landing h1 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 5rem;
+    }
+    .jumbo .landing h1 > span {
+        color: red;
+    }
+    .sub {
+        opacity: 0.5;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        padding: 1rem;
+        color: whitesmoke;
+        font-size: 2rem;
+    }
+
+    section .sec {
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+    section .sec h1 {
+        font-size: 5rem;
+        padding: 1rem;
+        opacity: 0.6;
+    }
+    section .sec p {
+        font-size: 2.5rem;
+        max-width: 60ch;
+        line-height: 4rem;
+        text-align: center;
+    }
+    section .sec.goal {
+        background: black;
+    }
+    section .sec.mission {
+        background: whitesmoke;
+        color: black;
+    }
+    /*==========
+    Form Styling
+    ============*/
+    .donate .cta {
+        width: 100%;
+        text-align: center;
+        padding: 4rem;
+    }
+    .donate .cta h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 4rem;
+        text-transform: capitalize;
+    }
+    .form {
+        width: 100%;
+    }
+    .form form {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    /*.form form input {
+        height: 4rem;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding-left: 5px;
+        border: none;
+        border-bottom: 1.2px solid red;
+        font-size: 2rem;
+    }*/
+    .form form textarea {
+        height: 15rem;
+        width: 100%;
+        resize: none;
+        padding-left: 5px;
+        padding-top: 1rem;
+        border: none;
+        border-bottom: 1.2px solid red;
+        font-size: 2.5rem;
+    } 
+    .form form input, textarea {
+        background: red;
+        color: white;
+        border: none;
+        height: 5rem;
+        margin: 6px;
+        width: 100%;
+        padding-left: 1rem;
+        font-size: 2rem;
+        transition: 0.2s ease-in-out;
+    }
+    ::-webkit-input-placeholder {
+        color: white;
+    }
+    :-ms-input-placeholder {
+        color: white;
+    }
+    ::-moz-placeholder {
+        color: white;
+    }
+    .form form input:focus, textarea:focus {
+        outline: none;
+        opacity: 0.5;
+        transition: 0.2s ease-in-out;
+    }
+    .form form .form-flex {
+        display: flex;
+        width: 100.6%;
+    }
+    .form form .form-flex input{
+        width: 50%;
+    }
+    form #submit {
+        background-color: red;
+        color: white;
+        font-size: 18px;
+        font-weight: solid;
+        border: 1.5px solid transparent;
+        width: 20%;
+        display: block;
+        margin: 2rem auto;
+        transition: 300ms;
+    }
+    form #submit:hover {
+        background-color: transparent;
+        color: red;
+        border: 1.5px solid red;
+    }
+    .contact {
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        background-color: black;
+        color: white;
+    }
+    .contact .cta h1 {
+        font-size: 5rem;
+        padding: 5rem;
+        opacity: 0.6;
+    }
+    .contact-info {
+        display: grid;
+        grid-template-columns: 4fr 2fr 4fr;
+    }
+    .contact-info div {
+        text-align: center;
+    }
+    .contact-info h1 {
+        font-size: 4rem;
+    }
+    .contact-info p {
+        font-size: 2.5rem;
+        line-height: 5rem;
+    }
+    .contact-info span {
+        font-size: 4rem;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    #cashApp {
+        text-align: center; 
+        font-size: 1.5rem; 
+        font-family: 'Poppins', sans-serif;
+        margin: 2rem;
+    }
+   .jumbo {
+       height: 100vh;
+       width: 100%;
+       background-image: 
+       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+       url("https://images.unsplash.com/photo-1508847154043-be5407fcaa5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-attachment: fixed;
+   }
+   header {
+       height: 5rem;
+       width: 100%;
+       overflow: hidden;
+   }
+   header nav {
+       width: 80%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: auto;
+       padding: 1rem;
+   }
+   header nav .logo a h1 {
+       font-family: 'Staatliches', cursive;
+       color: white;
+       border: 4px solid white;
+       padding: 6px;
+       letter-spacing: 2px;
+   }
+   header nav .logo a h1 span {
+       color: red;
+       padding: 0 1px;
+       opacity: 0.8;
+   }
+   header nav .menu-list {
+      position: absolute;
+      top: 4.2rem;
+      right: 0;
+      display: none;
+      background-color: black;
+      width: 100%;
+      padding: 1rem 0;
+      display: none;
+   }
+   header nav .menu-list li {
+    color: white;
+    line-height: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline;
+    padding-bottom: 4px;
+    margin-left: 45%;
+   }
+   header nav .menu-list li:hover {
+       border-bottom: solid white 1.3px;
+   }
+   
+   header nav .nav-menu #mobile {
+      font-size: 2.5rem;
+      color: white; 
+   }
+   .jumbo .landing {
+       height: 80%;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       color: white;
+       font-family: "Staatliches", cursive;
+   }
+   .jumbo .landing h1 {
+       text-transform: uppercase;
+       letter-spacing: 0.7px;
+       font-size: 30px;
+   }
+   .jumbo .landing h1 > span {
+       color: red;
+   }
+   .sub {
+       opacity: 0.5;
+       text-transform: uppercase;
+       letter-spacing: 5px;
+       padding: 1rem;
+       color: whitesmoke;
+   }
+
+
+   section .sec {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+section .sec h1 {
+    font-size: 48px;
+    padding: 16px;
+    opacity: 0.6;
+}
+section .sec p {
+    font-size: 16px;
+    width: 60%;
+    text-align: center;
+}
+section .sec.goal {
+    background: black;
+}
+section .sec.mission {
+    background: whitesmoke;
+    color: black;
+}
+/*==========
+Form Styling
+============*/
+.donate .cta {
+    width: 100%;
+    text-align: center;
+    font-size: smaller;
+    padding-top: 2rem;
+}
+.donate .cta h2 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+.form {
+    width: 100%;
+}
+.form form {
+    display: block;
+    margin: 0 auto;
+    padding: 32px;
+}
+.form form input {
+    height: 4rem;
+    width: 100%;
+    margin-bottom: 16px;
+    padding-left: 5px;
+    border: none;
+    border-bottom: 1.2px solid red;
+    font-size: 1rem;
+}
+.form form textarea {
+    height: 10rem;
+    width: 100%;
+    resize: none;
+    padding-left: 5px;
+    padding-top: 16px;
+    border: none;
+    border-bottom: 1.2px solid red;
+    font-size: 1.5rem;
+}
+.form form input:focus, textarea:focus {
+    outline: none;
+    opacity: 0.5;
+    transition: 0.2s ease-in-out;
+}
+.form form .form-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form form .form-flex input{
+    width: 50%;
+}
+#first-name {
+    margin-right: 5px;
+}
+form #submit {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    font-weight: solid;
+    border: 1.5px solid transparent;
+    width: 40%;
+    display: block;
+    margin: 10px auto;
+    transition: 300ms;
+}
+form #submit:hover {
+    background-color: transparent;
+    color: red;
+    border: 1.5px solid red;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+}
+.contact .cta h1 {
+    padding: 16px;
+    opacity: 0.6;
+    font-size: 3rem;
+}
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contact-info div {
+    text-align: center;
+    margin: 10px;
+}
+.contact-info span {
+    margin: auto;
+}
+
+}

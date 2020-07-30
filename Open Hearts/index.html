@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart to Heart Foundation | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="style.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+</head>
+<body>
+    <div class="jumbo" id="home">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><h1>Heart to <span>Heart</span></h1></a>
+                </div>
+                <div class="nav-menu">
+                    <i class="fas fa-bars" id="mobile"></i>
+                    <ul class="menu-list display">
+                        <a href="#home">
+                            <li>Home</li>
+                        </a>
+                        <a href="#about">
+                            <li>About Us</li>
+                        </a>
+                        <a href="#donate">
+                            <li>Donate</li>
+                        </a>
+                        <a href="#contact">
+                            <li>Contact Us</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="landing">
+            <h1>Open Your <span>Heart</span> and Make a <span>difference</span></h1>
+            <span class="sub">Be a Blessing to a child in need</span>
+        </div>
+    </div>
+    <section id="about">
+            <div class="sec goal">
+                <h1>Our Goal</h1>
+                <p>At the Heart to Heart Foundation our goal is to help in every area that is presented
+                with children who have disabilities.
+                </p>
+            </div>
+            <div class="sec mission">
+                <h1>Our Mission</h1>
+                <p id="donate"
+                >Our mission is to help in the research and development of something that will help
+                 remedy and prevent children being born with disabilites.
+                </p>
+            </div>
+    </section>
+    <div class="donate">
+        <div class="cta">
+            <h2>If you are willing to aid us on our mission <br/> fill the form below  </h2>
+        </div>
+        <div class="form">
+            <form action="connect.php" method="POST" id="myForm">
+                <div class="form-flex">
+                    <input type="text" placeholder="First Name *" id="fname" name="fname" required>
+                    <input type="text" placeholder="Last Name *" id="lname" name="lname" required> 
+                </div>
+                <div class="form-line">
+                    <input type="email" name="email" id="email" placeholder="Email *" required>
+                </div>
+                <div class="form-line">
+                    <input type="tel" name="number" id="number" placeholder="Phone Number *" required>
+                </div>
+                <div class="form-line">
+                    <input type="text" name="fax" id="fax" placeholder="Fax # *" required>
+                </div>
+                <div class="form-line">
+                    <textarea name="comment" id="comment" placeholder="Comment *" cols="30" rows="10" required></textarea>
+                </div>
+                <input type="submit" value="Submit" name="submit" id="submit">
+            </form>
+            <p id="cashApp" >Cash App: $Heart2Heart4U</p>
+        </div>
+    </div> 
+    
+    <div class="contact" id="contact">
+        <div class="cta">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contact-info">
+            <div class="num">
+                <p>325-249-5933</p>
+                <p>206-400-8268</p>
+            </div>
+            <div class="opt">
+                <span>- Or -</span>
+            </div>
+            <div class="email">
+                <h1>Email Us At</h1>
+                <p>Heart2heartConsulting@yahoo.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
